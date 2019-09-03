@@ -45,5 +45,8 @@ def update_counting_hash(hash, key)
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
   return_hash = hash { key => 2 }
-  
+  if ( hash => key == nil )
+    hash => 1 
+  if ( hash => nil )
+    hash =+ 1
 end
